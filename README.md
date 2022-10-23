@@ -1,4 +1,4 @@
-# Dongyeop_GG
+# Find.GG
 Assignment of 2022 PNU web development lecture
 
 
