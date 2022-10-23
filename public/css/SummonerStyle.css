@@ -1,0 +1,88 @@
+.Container {
+  padding: 20px;
+}
+
+.SummonerBox {
+  display: flex;
+  justify-content: space-around;
+}
+.profileIcon > img {
+  border-radius: 100%;
+  width: 200px;
+}
+input[value="검색"] {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(118, 178, 255);
+  color: white;
+  width: 50px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.eachMatch {
+  margin: 40px 0 40px 0;
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.item > img {
+  width: 30px;
+  border-radius: 3px;
+}
+.Win {
+  background-color: rgb(213, 227, 255);
+}
+.Lose {
+  background-color: rgb(255, 216, 217);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 40px;
+}
+.middledata {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+.windata {
+  display: flex;
+  color: #5383e8;
+}
+.losedata {
+  display: flex;
+  color: #e84057;
+  border-radius: 10px;
+}
+
+/* loadbar */
+.loading {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.loading::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid;
+  border-color: transparent grey transparent grey;
+  animation: loading 1.2s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

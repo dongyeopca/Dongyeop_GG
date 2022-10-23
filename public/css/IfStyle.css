@@ -1,0 +1,95 @@
+.Container > div {
+  margin-top: 50px;
+}
+.Container {
+  padding: 20px;
+}
+
+.SeasonPlaytime {
+  clear: both;
+}
+.EachSeason {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.PlayTime {
+  clear: both;
+}
+.PlayTime > div {
+  margin: 20px;
+}
+.Summoner {
+  margin-top: 60px;
+  font-size: 40px;
+  top: 30px;
+  bottom: 30px;
+  margin: auto 0;
+}
+.Summoner > img {
+  float: left;
+  width: 200px;
+  border-radius: 100%;
+}
+
+.If > div {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.money::before {
+  color: pink;
+  content: "2022년 최저시급으로\A";
+  white-space: pre;
+}
+
+.book::before {
+  color: purple;
+  content: "책 읽기(1권당 3시간)\A";
+  white-space: pre;
+}
+
+.three::before {
+  color: aqua;
+  content: "3분 간편요리 만들기\A";
+  white-space: pre;
+}
+.move::before {
+  color: tomato;
+  content: "서울 부산 왕복(8시간)\A";
+  white-space: pre;
+}
+.walk::before {
+  color: goldenrod;
+  content: "걸어서 칼로리 소모\A";
+  white-space: pre;
+}
+
+/* loadbar */
+.loading {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.loading::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid;
+  border-color: transparent grey transparent grey;
+  animation: loading 1.2s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
